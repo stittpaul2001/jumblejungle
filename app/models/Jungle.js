@@ -13,5 +13,16 @@ export class Jumble {
     return `<li>${this.name}</li>`
   }
 
+  get listHTMLTemplate() {
+    return `
+    <li role="button">
+                <div>
+                  <b>monkey 1</b>
+                  <span>high score</span>
+                </div>
+                <hr>
+              </li>
+    `
+  }
 
 }
