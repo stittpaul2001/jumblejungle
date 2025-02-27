@@ -17,12 +17,14 @@ export class Jumble {
     return `
     <li role="button">
                 <div>
-                  <b>monkey 1</b>
+                  <b>${this.name}</b>
                   <span>high score</span>
                 </div>
                 <hr>
               </li>
     `
   }
+
+
 
 }
