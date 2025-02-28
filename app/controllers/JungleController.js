@@ -18,7 +18,7 @@ export class JungleController {
     drawTryCount() {
         const jumbleFiles = AppState.jumbles
         const tryCountElem = document.getElementById('countnumber')
-        tryCountElem.setAttribute('title', ${ jumbles.length }, 'tries')
+        tryCountElem.setAttribute('title', '${jumbleFiles.length} tries')
         // const boldElem = tryCountElem.querySelector('b')
         // boldElem.innerText = jumbleFiles.length.toString()
     }
