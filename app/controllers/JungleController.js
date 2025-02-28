@@ -4,6 +4,7 @@ import { AppState } from "../AppState.js"
 export class JungleController {
     constructor(){
         this.drawjumblelist()
+        this.drawTryCount()
     }
     drawjumblelist() {
         const jumbleFiles = AppState.jumbles
@@ -13,4 +14,14 @@ export class JungleController {
         const jumbleFilesListElem = document.getElementById('JumbleList')
         jumbleFilesListElem.innerHTML = jumbleFilesContent
     }
+
+    drawTryCount(){
+        const jumbleFiles =AppState.jumbleFiles
+        const tryCountElem = document.getElementById('countnumber')
+        tryCountElem.setAttribute('title', '${jumbleFiles.length} tries')
+        // const boldElem = tryCountElem.querySelector('b')
+        // boldElem.innerText = jumbleFiles.length.toString()
+    }
+
+
 }
