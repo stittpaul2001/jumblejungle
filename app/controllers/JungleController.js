@@ -23,5 +23,11 @@ export class JungleController {
         // boldElem.innerText = jumbleFiles.length.toString()
     }
 
+    createJumbleFile() {
+        event.preventDefault()
+        console.log('creating case file');
+
+    }
+
 
 }
