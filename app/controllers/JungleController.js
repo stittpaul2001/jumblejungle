@@ -2,7 +2,7 @@ import { AppState } from "../AppState.js"
 
 
 export class JungleController {
-    constructor(){
+    constructor() {
         this.drawjumblelist()
         this.drawTryCount()
     }
@@ -10,15 +10,15 @@ export class JungleController {
         const jumbleFiles = AppState.jumbles
         let jumbleFilesContent = ''
         jumbleFiles.forEach(jumbleFile => jumbleFilesContent +=
-        jumbleFile.listHTMLTemplate)
+            jumbleFile.listHTMLTemplate)
         const jumbleFilesListElem = document.getElementById('JumbleList')
         jumbleFilesListElem.innerHTML = jumbleFilesContent
     }
 
-    drawTryCount(){
-        const jumbleFiles =AppState.jumbleFiles
+    drawTryCount() {
+        const jumbleFiles = AppState.jumbles
         const tryCountElem = document.getElementById('countnumber')
-        tryCountElem.setAttribute('title', '${jumbleFiles.length} tries')
+        tryCountElem.setAttribute('title', ${ jumbles.length }, 'tries')
         // const boldElem = tryCountElem.querySelector('b')
         // boldElem.innerText = jumbleFiles.length.toString()
     }
